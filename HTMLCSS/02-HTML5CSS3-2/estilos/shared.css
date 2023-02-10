@@ -1,0 +1,61 @@
+
+/* header  */
+header {
+    background: #bbb;
+    padding: 20px 0;
+}
+
+.header-wrapper {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+nav {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav a:visited {
+    color: red;
+}
+
+nav a:hover {
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+    color: blue;
+    text-decoration: underline;
+}
+
+
+/* === footer === */
+
+
+footer {
+    text-align: center;
+    background: url(../imagens/bg.jpg);
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #fff;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
