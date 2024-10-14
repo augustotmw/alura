@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    display: block;
+    height: 100%;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+    background-color: #000;
+    color: #F6F6F6;
+}
+
+h1 strong {
+    color: #22D4FD;
+}
+
+.img-border {
+    border: 3px solid #22D4FD;
+    display: inline-block;
+    border-radius: 16px;
+    transform: translate(18px, -18px);
+    margin: 18px 18px 0 0;
+}
+
+.img-border img {
+    border-radius: 16px;
+    max-width: 333px;
+    transform: translate(-18px, 18px);
+    border: 3px solid #FFF;
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    margin: 0 10%;
+    padding: 30px 0;
+}
+
+
+section {
+    max-width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+section h1 {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+section p {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section .actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+section .actions h2 {
+    color: #FFF;
+    font-size: 24px;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+}
+
+section .actions a {
+    border-radius: 16px;
+    border: 1px solid #22D4FD;
+    background: #000;
+
+    width: 280px;
+    padding: 16px;
+    color: #FFF;
+
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+
+    transition: 300ms ease-in-out;
+}
+
+section .actions a:hover {
+    transform: scale(1.1);
+    background: #272727;
+}
+
+section .actions a img {
+    width: 32px;
+    height: 32px;
+}
+

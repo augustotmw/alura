@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-1: #041562;
+    --cor-2: #EEEEEE;
+    --cor-3: #DA1212;
+    --cor-4: #11468F;
+
+    --font-1: 'Krona One', sans-serif;
+    --font-2: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    display: block;
+    height: 100%;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--cor-1);
+    color: var(--cor-2);
+}
+
+h1 strong {
+    color: var(--cor-3);
+}
+
+.img-border {
+    width: 50%;
+    max-width: 333px;
+    border: 3px solid var(--cor-3);
+    display: inline-block;
+    border-radius: 16px;
+    transform: translate(18px, -18px);
+    margin: 18px 18px 0 0;
+}
+
+.img-border img {
+    border-radius: 16px;
+    width: 100%;
+    transform: translate(-18px, 18px);
+    border: 3px solid var(--cor-2);
+}
+
+
+header {
+    padding: 3% 10%;
+    flex: 0;
+}
+
+header nav {
+    display: flex;
+    gap: 80px;
+}
+
+header nav a {
+    color: var(--cor-3);
+    font-family: var(--font-2);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 60px;
+    margin: 0 10%;
+    padding: 30px 0;
+    flex: 1;
+}
+
+
+section {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+section h1 {
+    font-size: 2.25em;
+    font-family: var(--font-1);
+}
+
+section p {
+    font-size: 1.5rem;
+    font-family: var(--font-2);
+    line-height: 2.25em;
+}
+
+section .actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+section .actions h2 {
+    font-size: 1.5rem;
+    font-family: var(--font-1);
+    font-weight: 400;
+}
+
+section .actions a {
+    border-radius: 16px;
+    border: 1px solid var(--cor-3);
+    background: var(--cor-1);
+
+    width: 50%;
+    padding: 16px;
+    color: var(--cor-2);
+
+    text-align: center;
+    font-family: var(--font-2);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+section .actions a:hover {
+    transform: scale(1.1);
+    background: var(--cor-4);
+}
+
+section .actions a img {
+    width: 32px;
+    height: 32px;
+}
+
+
+footer {
+    background: var(--cor-3);
+    color: var(--cor-1);
+    padding: 24px;
+    flex: 0;
+}
+
+footer p {
+    text-align: center;
+    font-family: var(--font-2);
+    font-size: 1.5rem;
+    font-weight: 400;
+}

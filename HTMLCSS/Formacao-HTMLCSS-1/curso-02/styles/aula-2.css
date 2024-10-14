@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    display: block;
+    height: 100%;
+}
+
+
+body {
+    display: block;
+    height: 100%;
+    background-color: #000;
+    color: #F6F6F6;
+}
+
+img {
+    border-radius: 16px;
+    max-width: 666px;
+    transform: translate(-18px, 18px);
+    border: 3px solid #FFF;
+}
+
+h1 strong {
+    color: #22D4FD;
+}
+
+.img-border {
+    border: 3px solid #22D4FD;
+    display: inline-block;
+    border-radius: 16px;
+    transform: translate(18px, -18px);
+    margin: 18px 18px 0 0;
+}
+
+main {
+    display: flex;
+    align-items: center;
+}
