@@ -12,6 +12,15 @@ export class TasksForm extends React.Component<ITaskFormProps, any> {
     };
     state: ITask = { ...this.defaultState };
 
+    setTasks = (tasks:ITask[])=>[
+        ...tasks,
+        {
+            ...this.state,
+            selected: false,
+            completed: false
+        }
+    ];
+
     onChangeName = (ev:React.ChangeEvent<HTMLInputElement>)=>
         this.setState({...this.state, name: ev.target.value});
 
@@ -20,7 +29,7 @@ export class TasksForm extends React.Component<ITaskFormProps, any> {
 
     submitForm = (ev:React.ChangeEvent<HTMLFormElement>) => {
         ev.preventDefault();
-        this.props.setTasks( (tasks:ITask[])=>[ ...tasks, { ...this.state }])
+        this.props.setTasks(this.setTasks);
         this.setState({...this.defaultState});
         return false;
     }
